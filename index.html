@@ -1,0 +1,951 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KRYPTOBONDS - A REVOLUTIONARY CRYPTO BONDS PLATFORM</title>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#031622">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./assets/js/modal.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+  <link href='./assets/css/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="./assets/images/immortalfb.jpg" type="image/png" sizes="16x16">
+<style>
+body {
+    font-family: 'Rubik';
+}
+</style>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default my-nav">
+  <div class="container">
+    <div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src="./assets/images/LOGO.png"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">	
+    <ul class="nav navbar-nav navbar-right menus">
+      <li class="active"><a href="https://ico.kryptobonds.io/">HOME</a></li>
+	  <li><a href="#video">VIDEO</a></li>
+	  <li><a href="#imo-token">KBS COIN</a></li>
+	  <li><a href="#team">TEAM</a></li>
+	  <li><a href="https://bitcointalk.org/index.php?topic=2548791" target="_blank">BOUNTY</a></li>
+          <li><a href="#press">PRESS</a></li>
+      <li><a href="https://ico.kryptobonds.io/Whitepaper_KryptoBonds.pdf" target="_blank">WHITE PAPER</a>
+      </li>
+      <li><a href="https://medium.com/@kryptobonds" target="_blank">BLOG</a></li>
+    <a class="btn btn-white navbar-btn" href="http://dashboard.kryptobonds.io/" >LOGIN/REGISTER <i class="fa fa-play"></i><i class="fa fa-play"></i><i class="fa fa-play"></i></a>
+	</ul>
+	</div>
+  </div>
+</nav>
+</header><div class="wrap" id="particles-js"></div>
+<section class="big-1" id="home">
+<div class="container">
+<div class="col-md-6"style="padding-left:50px;padding-right:50px;">
+<div class="#">
+<h1 class="section-title">
+    BLOCKCHAIN REVOLUTION IN THE BONDS MARKET</h1>
+<p class="description-white">Bonds are one of the most common type of investments and there are no equivalents in the crypto world up to now. KryptoBonds aims to be the Premium Bonds of the internet, where you can earn in three different ways:</p>
+<p class="service-description">1. Regular significant Prizes from $15.000 to $240.000 (in Crypto)<br /> &nbsp;&nbsp;&nbsp;- Funds will be collected through a small fee on each transaction<br /> &nbsp;&nbsp;&nbsp;- All Token holders and buyers automatically enter the draws<br /> 2. Dividends will be paid to all Token holders<br /> &nbsp;&nbsp;&nbsp;- After deducting Prizes & running costs, the rest will be paid out <br /> 3. Coin appreciation of your initial Investment <br /> &nbsp;&nbsp;&nbsp;- Owners interested in holding to win owner prizes<br /> &nbsp;&nbsp;&nbsp;- Traders interested in buying to win transaction prizes<br /> &nbsp;&nbsp;&nbsp;- Capped total number of Coins</p>
+</p>
+<div class="btn-box"><CENTER><a class="btn-green" href="https://ico.kryptobonds.io/Whitepaper_KryptoBonds.pdf" target="_blank">DETAILED WHITEPAPER</a></CENTER></div> 
+</div>
+</div>
+<div class="col-md-6" style="padding:0px;background:#031622;">
+<style>
+#days,#hours,#minutes,#seconds { 
+  font-family:inherit;
+  color:#fff;
+  display:inline-block;
+}
+.spacer {
+  background: #fff; 
+  position:relative;
+  width: 2px;
+  display:inline-block;
+  box-shadow: 0px 0px 9px 2px rgba(255,255,255,1);
+}
+
+#day-digit,#hour-digit,#minute-digit,#second-digit { 
+  text-align: center;
+    font-weight:100;  
+}
+#day-name,#hour-name,#minute-name,#second-name { 
+  text-align: center;
+  font-weight:200;
+}
+.countdown-container
+{
+background:linear-gradient(to bottom,rgba(91,198,228,0),rgba(91,198,228,0.1),rgba(91,198,228,0.2),rgba(91,198,228,0.6),rgba(91,198,228,0.8));
+border-radius:10px;		
+}
+.countdown-title
+{
+font-weight:100;
+color:#fff;
+text-align:center;	
+}
+.small-countdown
+{
+color:#fff;
+font-weight:200;
+text-align:center;
+}
+
+.social-container
+{
+text-align:center;	
+}
+.social-bar
+{
+list-style:none;
+}
+.social-bar li
+{
+display:inline-block;
+}
+.social-bar li a
+{
+color:rgba(255,255,255,0.4);
+transition:0.5s;
+}
+.social-bar li a:hover
+{
+color:rgba(255,255,255,0.9);
+}
+
+/*desktop*/
+@media screen and (min-width:768px)
+{
+	
+#days,#hours,#minutes,#seconds{ 
+  width:23.6%;
+}
+.spacer {
+  top:-48px;
+  height: 15px; 
+}
+
+#day-digit,#hour-digit,#minute-digit,#second-digit { 
+  font-size: 55px;
+  margin-top:0px;
+  margin-bottom:0px;  
+}
+
+#day-name,#hour-name,#minute-name,#second-name { 
+  font-size: 16px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.countdown-container
+{
+padding:40px;		
+}
+.countdown-title
+{
+font-size:25px;
+margin-bottom:25px;	
+}
+.small-countdown
+{
+padding-top:35px;
+font-size:18px;
+}
+.subslink
+{
+margin-top:25px;	
+}
+.social-container
+{
+padding-top:20px;
+padding-bottom:20px;	
+}
+.social-bar
+{
+padding:0px;
+}
+.social-bar li
+{
+padding-left:10px;
+padding-right:10px;
+}
+.social-bar li a
+{
+font-size:25px;
+}		
+}
+
+/*tablet*/
+@media screen and (max-width:600px)
+{
+img{max-width:80%;}
+#days,#hours,#minutes,#seconds{ 
+  width:23.0%;
+}
+.spacer {
+  top:-10px;
+  height: 5px; 
+}
+
+#day-digit,#hour-digit,#minute-digit,#second-digit { 
+  font-size: 35px;
+  margin-top:0px;
+  margin-bottom:0px;  
+}
+
+#day-name,#hour-name,#minute-name,#second-name { 
+  font-size: 16px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.countdown-container
+{
+margin-top:40px;
+padding:40px;		
+}
+.countdown-title
+{
+font-size:25px;
+margin-bottom:25px;	
+}
+.small-countdown
+{
+padding-top:35px;
+font-size:18px;
+}
+.subslink
+{
+margin-top:25px;	
+}
+.social-container
+{
+padding-top:20px;
+padding-bottom:20px;	
+}
+.social-bar
+{
+padding:0px;
+}
+.social-bar li
+{
+padding-left:10px;
+padding-right:10px;
+}
+.social-bar li a
+{
+font-size:25px;
+}		
+}
+
+/*mobile*/
+@media screen and (max-width:500px)
+{
+	img{max-width:95%;}
+#days,#hours,#minutes,#seconds{ 
+  width:22.0%;
+}
+.spacer {
+  top:-10px;
+  height: 5px; 
+}
+
+#day-digit,#hour-digit,#minute-digit,#second-digit { 
+  font-size: 30px;
+  margin-top:0px;
+  margin-bottom:0px;  
+}
+
+#day-name,#hour-name,#minute-name,#second-name { 
+  font-size: 14px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.countdown-container
+{
+margin-top:40px;
+padding:10px;
+width:100%;		
+}
+.countdown-title
+{
+font-size:22px;
+margin-bottom:25px;	
+}
+.small-countdown
+{
+padding-top:35px;
+font-size:18px;
+}
+.subslink
+{
+margin-top:25px;	
+}
+.social-container
+{
+padding-top:20px;
+padding-bottom:20px;	
+}
+.social-bar
+{
+padding:0px;
+}
+.social-bar li
+{
+padding-left:5px;
+padding-right:5px;
+}
+.social-bar li a
+{
+font-size:16px;
+}		
+}
+</style>
+<div class="countdown-container">
+<h2 class="countdown-title">PRE-SALE STARTS ON JAN 8th, 2018</h2>
+<div id="days">
+<p id="day-digit"></p>
+<p id="day-name"></p>
+</div>
+<div class="spacer"></div>
+<div id="hours">
+<p id="hour-digit"></p>
+<p id="hour-name"></p>
+</div>
+<div class="spacer"></div>
+<div id="minutes">
+<p id="minute-digit"></p>
+<p id="minute-name"></p>
+</div>
+<div class="spacer"></div>
+<div id="seconds">
+<p id="second-digit"></p>
+<p id="second-name"></p>
+</div>
+<div class="btn-box text-center"><a class="btn-green" href="http://dashboard.kryptobonds.io/" style="margin-left:10px;">Apply for Pre-Sale</a></div>
+<div class="small-countdown" id="small"></div>
+<div class="btn-box text-center"><a class="btn-green" href="http://dashboard.kryptobonds.io/" style="margin-left:10px;">Apply for ICO</a></div>
+<p class="text-center subslink"><a class="foot-menu" href="#">Subscribe for Updates</a></p>
+</div>
+<div class="social-container">
+<ul class="social-bar">
+<li><a href="https://t.me/joinchat/Fv4r_RDQ_kpnEkh8HqRGnA" target="_blank"><i class="fa fa-paper-plane"></i></a></li>
+<li><a href="https://kryptobonds.slack.com" target="_blank"><i class="fa fa-slack"></i></a></li>
+<li><a href="https://www.facebook.com/ICO.KryptoBonds" target="_blank"><i class="fa fa-facebook"></i></i></a></li>
+<li><a href="https://www.linkedin.com/company/11354559/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="https://twitter.com/KryptoBonds" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://medium.com/@kryptobonds" target="_blank"><i class="fa fa-medium"></i></a></li>
+<li><a href="https://github.com/KryptoBonds" target="_blank"><i class="fa fa-github"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCBX4OKOE_5OhyfpJlVFKcEw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+</ul>
+</div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 8, 2018 0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    var preday = -10;
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("day-digit").innerHTML = days;
+    document.getElementById("day-name").innerHTML = "DAYS";
+
+    document.getElementById("hour-digit").innerHTML = hours;
+    document.getElementById("hour-name").innerHTML = "HOURS";
+    
+    document.getElementById("minute-digit").innerHTML = minutes;
+    document.getElementById("minute-name").innerHTML = "MINUTES";
+
+    document.getElementById("second-digit").innerHTML = seconds;
+    document.getElementById("second-name").innerHTML = "SECONDS";
+
+	document.getElementById("small").innerHTML = "ICO STARTS IN :  " + (days - preday) + "  DAYS  "+hours+" : "+minutes+" : "+seconds;
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
+</div>
+</div>
+</section>
+
+<section class="light" id="video">
+<div class="container">
+<div class="col-md-6" style="padding-left:50px;padding-right:50px;">
+<p class="sub-title">K-BONDS INNOVATION</p>
+<h1 class="section-title-white">HOW  DO WE DELIVER:</h1>
+<p class="description-white">- Collect a small fee on each transaction <br />
+- Deliver the prizes as described <br />
+- Return the rest (less costs) as Dividends<br />
+- Capped tokens should encourage revaluation</p>
+<div class="btn-box"><a class="btn-white" style="margin-left:0px !important;" href="http://dashboard.kryptobonds.io/">JOIN LIVE SALE</a></div>
+</div>
+<div class="col-md-6">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1rw0IRaJ2qY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+</div>
+</div>
+</section>
+<section class="big" id="no-id">
+<div class="container">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<p class="sub-title-light">KRYPTOBONDS ADVANTAGES</p>
+<h1 class="section-title-white">KRYPTOBONDS TRANSFORMS INVESTMENT INDUSTRY WITH BLOCKCHAIN TECHNOLOGY</h1>
+<p class="description-white">Usually bonds give a 1% to 5% return and they are locked for a fixed number of years. 
+KryptoBonds on the other hand breaks away from this outdated thinking:
+</br>
+- You are not required to hold your K-Bonds for any period of time 
+</br>
+- Growth on your initial investment is expected 
+</br>
+- It offers regular and significant prizes
+</p>
+</div>
+
+<div class="col-md-4 services">
+<img class="service-icon" src="./assets/images/icons/investment.png"/>
+<p class="service-title">Sound  investment</p>
+<p class="service-description">Dividends and prizes will create interest in holding the K-Bonds which will generate upward pressure on the their value.</p>
+</div>
+
+<div class="col-md-4 services">
+<img class="service-icon" src="./assets/images/icons/revolution.png
+"/>
+<p class="service-title">Being part of the K-Bonds revolution</p>
+<p class="service-description">Dividends from fees are regularly shared  with all KBS holders</p>
+</div>
+
+<div class="col-md-4 services">
+<img class="service-icon" src="./assets/images/icons/blockchain.png
+"/>
+<p class="service-title">Independent blockchain technology</p>
+<p class="service-description">Flexible and adaptable cryptocurrency technology allows organic growth in an fast changing  ecosystem.</p>
+</div>
+
+<div class="col-md-4 services">
+<img class="service-icon" src="./assets/images/icons/draw.png
+"/>
+<p class="service-title">Fair and transparent draws</p>
+<p class="service-description">Regular draws will  be fully transparent and public.</p>
+</div>
+
+<div class="col-md-4 services">
+<img class="service-icon" src="./assets/images/icons/ticket-free.png
+"/>
+<p class="service-title">Automatic and anonymous  draws</p>
+<p class="service-description">No need to purchase tickets to participate. Just holding or buying K-Bonds enters you anonymously.</p>
+</div>
+
+<div class="col-md-4 services">
+<img class="service-icon" src="./assets/images/icons/security.png
+"/>
+<p class="service-title">Blockchain technology security</p>
+<p class="service-description">Only you have access to your KBS wallet and dividends and prizes are automatically and transparently transferred into it.</p>
+</div>
+
+</div>
+</section>
+<section class="big" style="background:#fff;">
+<div class="container">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<p class="sub-title-light text-center">VIEW CODE ON GITHUB</p>
+<h1 class="section-title-black text-center">VIEW DEVELOPMENT PROGRESS TODAY</h1>
+<p class="description-black text-center">Our Github repository will keep developers up to date on the current code status and where it is going in terms of development.</p>
+</div>
+<div class="col-md-offset-2 col-md-8" style="padding-top:40px;">
+<div class="demo__git">
+<script src="https://gist.github.com/KryptoBonds/1234e440f0c789666952e4d977c7cff1.js"></script>
+</div>
+</div>
+<div class="col-md-8 col-md-offset-2">
+<p class="text-center" style="margin-top:40px;"><a class="btn-hollow" href="https://github.com/KryptoBonds" target="blank">Visit Code on Github</a></p>
+</div>
+</div>
+</section>
+<section class="light-2" style="padding-bottom:0px;" id="team">
+<div class="container">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<p class="sub-title text-center">OWNERS & ADVISORS</p>
+<h1 class="section-title-white text-center">EVEN THE BEST IDEA NEEDS GREAT SUPERVISION</h1>
+<p class="description-white text-center">Our team includes somed awsome developers and researchers that have worked together to bring life to KryptoBonds. Meet our team on Slack or Telegram today</p>
+</div>
+</div>
+</section>
+<section class="light-4">
+<div class="container" >
+
+
+
+<div class="col-md-3">
+<div class="feature">
+<img src="./assets/images/team/elias.png" class="feature-image"/>
+<p class="feature-title text-center">Elias Rodriguez​</p>
+<p class="feature-subtitle text-center">CO-FOUNDER AND CEO</p>
+<p> <span class="feature-fa f1" style="top:-80px;"></span><span class="feature-description">Elias holds a BEng in Nuclear Engineering from London University and now leads a small RD&E team in the automotive industry.</span></p>
+<p> <span class="feature-fa f2" style="top:-20px;"></span><span class="feature-description">Blockchain technology and cryptocurrency enthusiast.</span></p>
+<p> <span class="feature-fa f2" style="top:0px;"></span><span class="feature-description">Web developer and Reseller.</span></p>
+<p> <span class="feature-fa f2" style="top:-20px;"></span><span class="feature-description">PHP programming with an interest in Internet security.</span></p>
+<p class="text-center" style="position:relative;top:80px;"><a class="social-ref"><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/elias-rodriguez-08621426/" target="_blank"> LINKEDIN</a></p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="feature">
+<img src="./assets/images/team/david.png" class="feature-image"/>
+<p class="feature-title text-center">David Martial</p>
+<p class="feature-subtitle text-center">CO-FOUNDER</p>
+<p> <span class="feature-fa f1" style="top:-80px;"></span><span class="feature-description">David holds a BSc in Design Engineering and has a digital Marketing and Design development background. Cryptocurrency investor.</span></p>
+<p> <span class="feature-fa f1" style="top:-20px;"></span><span class="feature-description">Cryptocurrency Investor and Enthusiast since 2012.</span></p>
+<p> <span class="feature-fa f1" style="top:-20px;"></span><span class="feature-description">Entepreneur in Blockchain Technology.</span></p>
+<p> <span class="feature-fa f1" style="top:0px;"></span><span class="feature-description">Digital Marketing Specialist.</span></p>
+
+<p class="text-center"  style="position:relative;top:80px;"><a class="social-ref"><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/david-martial-a6ab12151/" target="_blank"> LINKEDIN</a></p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="feature">
+<img src="./assets/images/team/uri.png" class="feature-image"/>
+<p class="feature-title text-center">Uri Valles</p>
+<p class="feature-subtitle text-center">CO-FOUNDER</p>
+<p> <span class="feature-fa f1" style="top:-60px;"></span><span class="feature-description">Uri has a BSc in Mechanical Engineering and a MSc in electronics from the University of Barcelona.</span></p>
+<p> <span class="feature-fa f1" style="top:-60px;"></span><span class="feature-description">Uri manages a team in product development from design, feasibility, cross-team coordination to manufacturing.</span></p>
+<p> <span class="feature-fa f1" style="top:-20px;"></span><span class="feature-description">Five years trading commodities, Currencies and Indexes.</span></p>
+<p> <span class="feature-fa f1" style="top:0px;"></span><span class="feature-description">Enthusiast in technical analysis.</span></p>
+
+<p class="text-center" style="position:relative;top:60px;"><a class="social-ref"><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/uri-valles-132a1b14b/" target="_blank"> LINKEDIN</a></p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="feature">
+<img src="./assets/images/team/jose.png" class="feature-image"/>
+<p class="feature-title text-center">Jose Ricardo Pala</p>
+<p class="feature-subtitle text-center">CO-FOUNDER</p>
+<p> <span class="feature-fa f1" style="top:-60px;"></span><span class="feature-description">Jose has a BSc in Mechanical Engineering  at UPV of Valencia and a MSc in Automotive engineering in RWTH in Germany.</span></p>
+<p> <span class="feature-fa f1" style="top:-80px;"></span><span class="feature-description">Jose has successfully held various responsibilities in marketing, sales, business development and management positions in the last 8 years.</span></p>
+<p> <span class="feature-fa f1" style="top:-40px;"></span><span class="feature-description">Passionate about cryptocurrencies and changing the world with them.</span></p>
+<p class="text-center" style="position:relative;top:50px;"><a class="social-ref"><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/jose-pala-4a4a1b14b/" target="_blank"> LINKEDIN</a></p>
+</div>
+  </div>
+</div>
+</section>
+<section class="big" style="background:rgb(255,255,255);padding-bottom:0px;">
+<div class="container">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<p class="sub-title-light text-center">WORLD CLASS TEAM</p>
+<h1 class="section-title-black text-center">KRYPTOBONDS IS PROUD TO PRESENT OUR AMAZING TEAM THAT HAVE MADE ALL THIS POSSIBLE</h1>
+<p class="description-black text-center">Our team is not just the employees but they are more like a family, that's the reason why everything that we've achieve so far is beyond extraordinary, if you wish to talk to our team do contact us in our telegram group.</p>
+</div>
+<div class="row">
+<div class="col-md-3" style="margin-top:100px;margin-bottom:100px;">
+<div class="feature-team">
+<img src="./assets/images/team/sheharyar.png" class="feature-image-2"/>
+<p class="feature-title text-center">Shehar Yar</p>
+<p class="feature-subtitle text-center">Blockchain Developer</p>
+<p class="text-center"><a class="team-view" id="team1"><i class="fa fa-search"></i></a></p>
+<p class="text-center">
+</p>
+</div>
+</div>
+
+<div class="col-md-3" style="margin-top:100px;margin-bottom:100px;">
+<div class="feature-team">
+<img src="./assets/images/team/raj.png" class="feature-image-2"/>
+<p class="feature-title text-center">Raj Dharma</p>
+<p class="feature-subtitle text-center">Marketing Executive</p>
+<p class="text-center"><a class="team-view" id="team2"><i class="fa fa-search"></i></a></p>
+<p class="text-center">
+</p>
+</div>
+</div>
+<div class="col-md-3" style="margin-top:100px;margin-bottom:100px;">
+<div class="feature-team">
+<img src="./assets/images/team/gopi.png" class="feature-image-2"/>
+<p class="feature-title text-center">Gopi</p>
+<p class="feature-subtitle text-center">Markting Influencer</p>
+<p class="text-center"><a class="team-view" id="team3"><i class="fa fa-search"></i></a></p>
+<p class="text-center">
+</div>
+</div>
+<div class="col-md-3" style="margin-top:100px;margin-bottom:100px;">
+<div class="feature-team">
+<img src="./assets/images/team/kugan.png" class="feature-image-2"/>
+<p class="feature-title text-center">Kugan</p>
+<p class="feature-subtitle text-center">Technical Lead</p>
+<p class="text-center"><a class="team-view" id="team4"><i class="fa fa-search"></i></a></p>
+<p class="text-center">
+
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="big" style="padding-bottom:0px;">
+<div class="container-fluid">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<p class="sub-title text-center">ROAD MAP</p>
+<h1 class="section-title-white text-center">FOLLOW OUR ROADMAP TO KEEP TRACK OF PROGRESS</h1>
+<p class="description-white text-center">The achievements of all of our goals and future plans will be reflected in this roadmap. 
+We are fully committed to our investors and will work constantly to meet our deadlines and forecasts. If delays are required to maintain the high standards we set ourselves, immediate announcements will be made and this roadmap updated.</p>
+</div>
+<div class="rdmp-desktop">
+<img src="./assets/images/roadmap-lines.png" class="rd-mp"/>
+</div>
+<div class="rdmp-mobile"></div>
+<span class="points" id="p1"></span>
+<span class="points" id="p2"></span>
+<span class="points" id="p3"></span>
+<span class="points" id="p4"></span>
+<span class="points" id="p5"></span>
+<span class="points" id="p6"></span>
+</div>
+<div class="my-cont">
+<div class="data-timeline" id="dt1">
+<span class="text">SCOPE</span>
+<span class="date">2017 Q2</span>
+<div class="data-desc">
+<ul>
+<li>Market research on Blockchain technology and ICO platforms</li>
+<li>Concept idea creation and definition of Kryptobonds ecosystem</li>
+<li>Partnership foundation and structural development planning</li>
+<li>Recruitment of Advisors and Counsellors</li>
+<li>Talent Recruitment for Key positions</li>
+</ul>
+</div>
+</div>
+
+<div class="data-timeline" id="dt2">
+<div class="data-desc">
+<ul>
+<li>Legal structure and framework</li>
+<li>Strategic Partnerships</li>
+<li>Marketing strategy planning</li>
+<li>Token Sale Platform development and testing</li>
+<li>Development of Business plan</li>
+</ul>
+</div>
+<span class="date">2017 Q3</span>
+<span class="text">STRATEGY AND PLANNING</span>
+</div>
+
+<div class="data-timeline" id="dt3">
+<span class="text">OPEN FOR BUSINESS</span>
+<span class="date">2017 Q4</span>
+<div class="data-desc">
+<ul>
+<li>Regulatory Framework Compliance Execution Plan</li>
+<li>Development of Token/Blockchain strategy</li>
+<li>Product Portfolio Roadmap</li>
+<li>KBS community development</li>
+<li>KBS promotional event</li>
+</ul>
+<p class="text-center"><strong>Premium Sale Starts: Monday 4th Dec 17</strong></p>
+
+</div>
+</div>
+
+<div class="data-timeline" id="dt4">
+<div class="data-desc">
+<p class="text-center"><strong>Pre Sale Starts: Monday 8th Jan 18</strong></p>
+<p class="text-center"><strong>ICO Starts: Thursday 18th Jan 18</strong></p>
+<p class="text-center"><strong>ICO Ends: Sunday 18th Mar 18</strong></p>
+<ul>
+<li>Execution Plan for Blockchain creation</li>
+<li>Downloadable wallet creation and distribution</li>
+<li>Further Marketing development / Marketing Campaign Strategy</li>
+<li>Development of Draws program</li>
+<li>Listing KBS on exchanges</li>
+<li>Start with regular raffles/draws</li>
+</ul>
+</div>
+<span class="date">2018 Q1</span>
+<span class="text">PRODUCT/MARKETS GRID</span>
+</div>
+
+<div class="data-timeline" id="dt5">
+<span class="text">BUSINESS GROWTH</span>
+<span class="date">2018 Q2</span>
+<div class="data-desc">
+<ul>
+<li>Strengthen KBS Community</li>
+<li>Weekly and monthly draws</li>
+<li>Product Development and Improvements</li>
+<li>New product features validation and integration</li>
+</ul>
+</div>
+</div>
+
+<div class="data-timeline" id="dt6">
+<div class="data-desc">
+<ul>
+<li>Develop other delivery platforms</li> 
+<li>Further growth of ecosystem: addition of miscellaneous services</li>
+<li>Strengthen the partnership and enhance marketing campaign.</li>
+<li>Distribute token revenue and holder income.</li>
+</ul>
+</div>
+<span class="date">2018 Q3</span>
+<span class="text">BUSINESS SECURING</span>
+</div>
+</div>
+</section>
+<section class="light-3" id="reach-out">
+<div class="container">
+<div class="col-md-6" style="padding-left:50px;padding-right:50px;">
+<p class="sub-title">REACH OUT</p>
+<h1 class="section-title-white">ASK QUESTIONS IN THE CHAT AND CHECK OUR SOCIAL MEDIA CHANNELS</h1>
+<p class="description-white">We are as transparent as possible and answer all questions in a comprehensive manner. 
+Participate in our chats and ask us anything.</p>
+<div class="btn-box"><a class="btn-white" style="margin-left:0px !important;"  href="http://dashboard.kryptobonds.io/">JOIN LIVE SALE</a></div>
+</div>
+<div class="col-md-6" style="padding-left:50px;padding-right:50px;padding-top:20px;">
+<div class="col-md-4 socials-1"><a href="https://www.facebook.com/ICO.KryptoBonds" target="_blank"><img  src="./assets/images/22.png" height="30" width="105"/></a></div>
+<div class="col-md-4 socials-1"><a href="https://t.me/joinchat/Fv4r_RDQ_kpnEkh8HqRGnA" target="_blank"><img  src="./assets/images/33.png" height="30" width="100"/></a></div>
+<div class="col-md-4 socials-1"><a href="https://twitter.com/KryptoBonds" target="_blank"><img  src="./assets/images/44.png" height="30" width="105"/></a></div>
+<div class="col-md-4 socials-1"><img  src="./assets/images/55.png" height="30" width="105"/></div>
+<div class="col-md-4 socials-1"><a href="https://www.youtube.com/channel/UCBX4OKOE_5OhyfpJlVFKcEw" target="_blank"><img  src="./assets/images/66.png" height="30" width="105"/></a></div>
+<div class="col-md-4 socials-1"><a href="https://github.com/KryptoBonds" target="_blank"><img  src="./assets/images/77.png" height="30" width="105"/></a></div>
+<div class="col-md-4 socials-1"><a href="https://medium.com/@kryptobonds" target="_blank"><img  src="./assets/images/88.png" height="30" width="105"/></a></div>
+<div class="col-md-4 socials-1"><a href="99"><img  src="./assets/images/99.png" height="30" width="105"/></a></div>
+<div class="col-md-4 socials-1"><a href="https://kryptobonds.slack.com" target="_blank"><img  src="./assets/images/slack_logo-i.png" height="40" width="105"/></a></div>
+</div>
+</div>
+</section>
+<section class="big" id="imo-token">
+<div class="container-fluid">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<p class="sub-title text-center">KRYPTOBONDS COIN</p>
+<h1 class="section-title-white text-center">TOKEN DISTRIBUTION AND STAGES DIVISION</h1>
+<p class="description-white text-center">KryptoBonds will be sold in 3 stages. Premium Sale. Pre Sale & ICO.</p>
+</div>
+<div class="col-md-3">
+<h1 class="section-title-white text-center">PREMIUM SALE - starts 4th Dec. 2017</h1>
+<p class="description-white">
+- Reserved for early investors, project supporters and partners.</br>
+- Used to forge strategic partnerships and commitment.</br>
+- Some of raised funds will be used to aggressively market our campaign, support legal procedures and compliance and incorporation counselling.</br> 
+</p>
+</div>
+<div class="col-md-6">
+<img src="./assets/images/COIN.png" style="margin-left:auto;margin-right:auto;margin-top:40px;margin-bottom:40px;display:block;"/>
+</div>
+<div class="col-md-3">
+<h1 class="section-title-white text-center">ICO - 18th Jan 2018 – 18 Mar 2018</h1>
+<p class="description-white">
+Four Bonus stages – from 20% to 0%. 
+</p>
+<p class="description-white">
+Funds, as described in White Paper, will be primarily used to:</br>
+- Allow the full-time allocation of team into building the first MVP of KryptoBonds Platform, including availability roadmap.</br>
+- Organization of Sponsored events to introduce the platform future partners.</br>
+- Dedicated marketing reaching out to merchants to introduce the platform benefits.</br> 
+</p>
+</div>
+<div class="col-md-8 col-md-offset-2">
+<h2 class="section-title-white text-center">PRE-SALE - 8th Jan 2018</h2>
+<p class="description-white">
+- First public sale.</br>
+- The Pre-ICO stage will provide us with early community feedback regarding the level of engagement and support in the KryptoBonds project.</br>
+- Special bonus of 200% - pay 1 get 3!</br>
+</p>
+</div>
+</section>
+<section class="light-6" id="faq">
+<div class="container">
+<div class="col-md-10 col-md-offset-1">
+<p class="sub-title text-center">FAQS</p>
+<center><h1 class="section-title-white">ABOUT KRYPTOBONDS</h1></center>
+
+<button class="accordion">What is the difference between K-Bonds and the current bonds?</button>
+<div class="answer">
+  <p>Usually regular bonds offer a 1% to 5% return and they are locked for a fixed number of years. KryptoBonds on the other hand breaks away from this outdated thinking: the customer is not required to hold their K-Bonds for any period of time, growth on their initial investment is expected and they offer the opportunity to win regular significant prizes.</p>
+</div>
+
+<button class="accordion">Why should I invest in KryptoBonds?</button>
+<div class="answer">
+  <p>Every KBS bought in KryptoBonds will provide returns either by coin revaluation, monthly dividends or with our fully transparent draws.</p>
+</div>
+
+<button class="accordion">How will my investment grow?</button>
+<div class="answer">
+  <p>The owners of the K-Bonds will hold them due to the expectation of winning the draws causing demand to increase.</p>
+</div>
+
+<button class="accordion">How can I participate in the draws?</button>
+<div class="answer">
+  <p>The only condition to participate in the draws is to buy or hold K-Bonds.</p>
+</div>
+
+<button class="accordion">How will you collect the money from the draws?</button>
+<div class="answer">
+  <p>The prize will be collected from a small fee on each transaction.</p>
+</div>
+
+<button class="accordion">What is the purpose of KryptoBonds?</button>
+<div class="answer">
+  <p>KryptoBonds is intended for saving and investment with the added benefit of  regular raffles.</p>
+</div>
+
+<button class="accordion">Where do you see KryptoBonds in 3 years?</button>
+<div class="answer">
+  <p>In 3 years we intend to be the standard in saving and investment Cryptocurrency reporting sound returns and many satisfied winners!</p>
+</div>
+
+<button class="accordion">How can you contact Kryptobonds?</button>
+<div class="answer">
+  <p>You can contact us via all the social media outlets above as well as through email or post:</p>
+  <p>ico@kryptobonds.io</p>
+73 Circular Rd</br>
+Douglas IM1 1AT</br>
+Isle of Man </br>
+  
+</div>
+</div>
+</section>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+<section class="big"  id="press" style="background-color:#fff;padding-bottom:0px;">
+<div class="container-fluid">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<p class="sub-title-light text-center">OUR PARTNERS</p>
+</div>
+<div class="col-md-2 socials"><a href="https://cointelegraph.com/press-releases/kryptobonds-a-revolutionary-investment-blockchain-in-the-cryptocurrency-world" target="_blank"><img src="./assets/images/partners/cointelegraph.png"  height="40" style="margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;display:block;"/></a></div>
+<div class="col-md-2 socials"><a href="http://coin5s.com/content/kryptobonds-revolutionary-investment-blockchain-cryptocurrency-world" target="_blank"><img style="margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;display:block;" src="./assets/images/partners/coin5s_full_0.png"  height="40"/></a></div>
+<div class="col-md-2 socials"><a href="http://www.financeplanet.info/kryptobonds-a-revolutionary-investment-blockchain-in-the-cryptocurrency-world-cointelegraph-bitcoin-cryptocurrency-and-blockchain-news/" target="_blank"><img src="./assets/images/partners/logo_FinancePLanet.jpg"  height="40" style="margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;display:block;"/></a></div>
+<div class="col-md-2 socials"><a href="https://ecoins.techmix.today/kryptobonds-a-revolutionary-investment-blockchain-in-the-cryptocurrency-world-press-releases/" target="_blank"><img src="./assets/images/partners/LogoTechMix.png"  height="40" style="margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;display:block;"/></a></div>
+<div class="col-md-2 socials"><a href="#" target="_blank"><img src="./assets/images/partners/huff-post.jpg"  height="20" style="margin-left:auto;margin-right:auto;margin-top:10px;display:block;"/></a></div>
+<div class="col-md-2 socials"><a href="http://www.digitaltechinsider.com/blockchain/kryptobonds-a-revolutionary-investment-blockchain-in-the-cryptocurrency-world/" target="_blank"><img src="./assets/images/partners/digital-tech-insider-logo3.png"  height="40" style="margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto;display:block;"/></a></div>
+</div>
+<div class="container-fluid explore">
+<div class="col-md-offset-1 col-md-5">
+<div class="partner">
+<h1 class="section-title-white">JOIN TOKEN SALE</h1>
+<p class="description-white">We hope you've liked the idea and cause if you wish to support join our sale today.</p></br>
+<p><a class="btn-hollow" href="http://dashboard.kryptobonds.io/">JOIN LIVE SALE</a></p>
+</div>
+</div>
+<div class="col-md-5">
+<div class="partner">
+<h1 class="section-title-white">EXPLORE OUR BLOG</h1>
+<p class="description-white">To read more about our research and discoveries explore our Blog today.</p></br>
+<p><a class="btn-hollow" href="https://medium.com/@kryptobonds" target="_blank">READ NOW</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="big" style="padding-bottom:10px;">
+<div class="container">
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;">
+<div class="col-md-6">
+<nav class="navbar navbar-default my-nav" style="background:none;">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="./assets/images/LOGO.png"/></a>
+    </div>
+</nav>
+<p class="sub-title">Subscribe to our newsletter</p>
+<input type="email" placeholder="Your Email Address" class="input"/><button class="btn-sub">Go!</button>
+
+</div>
+<div class="col-md-6">
+<div class="col-md-4">
+<p class="text-center" style="color:#fff;font-size:16px;">QUICK MENU</p>
+<p class="text-center"><a class="foot-menu" href="https://ico.kryptobonds.io/">HOME</a></p>
+<p class="text-center"><a class="foot-menu" href="#video">VIDEO</a></p>
+<p class="text-center"><a class="foot-menu" href="#imo-token">KBS COIN</a></p>
+<p class="text-center"><a class="foot-menu" href="#team">TEAM</a></p>
+<p class="text-center"><a class="foot-menu" href="#press">PRESS</a></p>
+</div>
+<div class="col-md-4">
+<p class="text-center" style="color:#fff;font-size:16px;">QUICK MENU</p>
+<p class="text-center"><a class="foot-menu" href="https://ico.kryptobonds.io/Whitepaper_KryptoBonds.pdf" target="_blank">WHITEPAPER</a></p>
+<p class="text-center"><a class="foot-menu" href="https://ico.kryptobonds.io/Press_Release.pdf" target="_blank">PRESS RELEASE</a></p>
+<p class="text-center"><a class="foot-menu" href="#faq">FAQ</a></p>
+<p class="text-center"><a class="foot-menu" href="http://dashboard.kryptobonds.io">JOIN ICO</a></p>
+<p class="text-center"><a class="foot-menu" href="https://dashboard.kryptobonds.io" target="_blank">BOUNTY</a></p>
+</div>
+
+</div>
+</div>
+<div class="col-md-12" style="padding-left:40px;padding-right:40px;"><p class="copy-right">Copyright © KryptoBonds Team</p></div>
+</div>
+</section><div class="team-overlay">
+<div class="container-fluid" id="team-bg-001">
+<div class="col-md-4 col-md-offset-4 team-bg" id="team1-1">
+<img src="./assets/images/team/sheharyar.png" class="feature-image-big"/>
+<p class="team-subtitle">Blockchain Developer</p>
+<p class="team-title">Shehar Yar</p>
+<P class="team-description">BLOCKHAIN Developer@ NaNO ROBOTICS For 10 year consistently working as a C#,C++,JAVA, Python developer I'm one of the top solutions provider in the industry.With recent evolution of Blockchain and smart contracts my skills
+ have evolved to adopt these technologies hence I believe that you and me we can bring any Blockchain idea Alive.</p>
+
+</div>
+
+<div class="col-md-4 col-md-offset-4 team-bg" id="team1-2">
+<img src="./assets/images/team/raj.png" class="feature-image-big"/>
+<p class="team-subtitle">Marketing Executive</p>
+<p class="team-title">Raj Dharma</p>
+<P class="team-description">Market Analyst with in-depth knowledge and years of experience in the field of Cryptocurrency and Blockchain Industry. Striving to bring the Social and Digital Media to next level.</p>
+</div>
+
+<div class="col-md-4 col-md-offset-4 team-bg" id="team1-3">
+<img src="./assets/images/team/gopi.png" class="feature-image-big"/>
+<p class="team-subtitle">Markting Influencer</p>
+<p class="team-title">Gopi</p>
+<P class="team-description">I love learning new things and to have a hand in all parts of application development. As a consultant I get to practice a lot of different things, I am a developer, an interaction designer, and I do some project management. </p>
+
+</div>
+
+<div class="col-md-4 col-md-offset-4 team-bg" id="team1-4">
+<img src="./assets/images/team/kugan.png" class="feature-image-big"/>
+<p class="team-subtitle">Technical Lead</p>
+<p class="team-title">Kugan</p>
+<P class="team-description">I am an interaction designer with a broad spectrum of knowledge and experiences. My passion lies in user friendly technology and to do this I like to keep myself updated on current trends in software development, usability methodology and graphical design.</p>
+
+</div>
+</div>
+</div>
+</body>
+<script src="./assets/js/particles.js"></script>
+<script src="./assets/js/app.js"></script>
+  <script src="./assets/js/script.js"></script>
+</html>
